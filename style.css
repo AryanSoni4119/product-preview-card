@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Fraunces', serif; */
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+      background-color:var(--Cream) ;
+      min-height:100vh ;
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content: center;
+}
+.main-card{
+    display:flex;
+    width:600px;
+    border-radius: 20px;
+    overflow:hidden ;
+    
+  
+}
+.img{
+    width:55%;
+    object-fit: fill;
+    overflow: hidden;
+    
+}
+
+.product-img{
+    width:100%;
+}
+.perfume-card{
+    width:45%;
+    background-color: var(--White);
+    padding:2rem;     
+    border-radius:7px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    
+    
+}
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500 ;
+    padding-bottom:22px ;
+    font-size:small;
+}
+.name{
+    font-family: 'Fraunces', serif;
+    font-size:2rem;
+    line-height:2rem ;
+}
+.para{
+    font-family: 'Montserrat', sans-serif;
+    padding:17px 2px 0px 5px;
+    line-height:1.5rem ;
+    font-size:13px ;
+    font-weight: 400;
+}
+.new-rate{
+    color:var(--Dark-cyan);
+    font-family: 'Fraunces', serif;
+    font-size:xx-large;
+}
+.btn{
+    background-color:var(--Dark-cyan);
+    color:var(--White);
+    border: none;
+    border-radius:5px ;
+    font-weight:550;
+    display: flex;
+    align-items: center;
+    width:100%;
+    padding: 1rem; 
+    justify-content: center;
+    
+}
+.btn:hover{
+    background-color: var(--Very-dark-blue);
+}
+.rate{
+    display:flex;
+    
+    align-items: center;
+    gap:27px;
+    margin-top:-21px;
+}
+.light-shade{
+    color:var(--Dark-grayish-blue);
+}
+.original-rate{
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+.button{
+    margin-top:-0.5rem;
+}
+
+@media screen and (max-width: 550px){
+    .main-card{
+        width: 100%; 
+        flex-direction: column;
+        padding: 2rem;
+        min-height: 100vh;
+        border-radius:20px;
+        /* overflow: hidden; */
+        
+    }
+    .img{
+        width:100%;
+
+    }
+    
+
+    .perfume-card{
+        width: fit-content;
+    }
+    .para{
+        padding-top:20px ;
+        padding-right:67px ;
+    }
+    .rate{
+        padding-top:12px ;
+    }
+    
+    }
